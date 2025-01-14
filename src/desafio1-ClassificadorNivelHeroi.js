@@ -1,10 +1,4 @@
-/* Primeira parte
-Crie uma variável para armazenar o nome e a quantidade de experiência (XP) de um herói, 
-depois utilize uma estrutura de decisão para apresentar alguma das mensagens abaixo: */
-
-/* let nome = "Harry Potter"
-let XP = ""
-*/
+// Desafio Classificador Nível Heroi 
     const prompt = require("prompt-sync")();
 
     let nome = prompt("Digite o nome do personagem:");

@@ -1,11 +1,16 @@
 // Desafio Classificador Nível Heroi 
     const prompt = require("prompt-sync")();
 
+    while(true) { 
+    
     let nome = prompt("Digite o nome do personagem:");
     let nivel_heroi = Number(prompt("Digite o valor do nível atual: "));
 
-    console.log("O nome do personagem é: " + nome);
-    console.log ("O valor do nível atual do personagem é: " + nivel_heroi);
+   
+    if (isNaN(nivel_heroi) || nivel_heroi < 0) {
+        console.log("Por favor, insira um número válido para o nível.");
+        continue;  
+    }
 
     if (nivel_heroi <= 1000) {
         console.log("O herói " + nome + " está no nível Ferro.");
@@ -32,3 +37,16 @@
         console.log("O herói " + nome + " está no nível Radiante.");
     }
 
+    let verificarOutroNivel = prompt("Gostaria de verificar o nível de mais algum herói? [S/N]: ");
+
+     if (verificarOutroNivel.trim().toLowerCase() === 'n') {
+        console.log("Verificações finalizadas, volte pro jogo!");
+        break;   
+
+    } else if (verificarOutroNivel.trim().toLowerCase() === 's') {
+        console.log("Vamos nessa...");
+
+    } else {
+        console.log("Entrada inválida! Por favor, digite 'S' ou 'N'.");
+    }
+}

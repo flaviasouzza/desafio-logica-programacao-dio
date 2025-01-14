@@ -38,3 +38,26 @@ Por que usar: Salva o novo estado do projeto no histórico, com uma mensagem ("t
 # git push -u origin main
 Repetição: Envia os novos commits para o repositório remoto na branch main.
 Por que usar novamente: As mudanças locais agora precisam ser compartilhadas ou sincronizadas com o repositório remoto.
+
+# git pull
+Busca atualizações:
+Verifica as alterações na branch do repositório remoto.
+Baixa as mudanças:
+Faz o download dos commits que não estão no seu repositório local.
+Mescla as mudanças:
+Integra as alterações remotas à branch local automaticamente (se não houver conflitos).
+
+# Resumo 
+
+NUNCA ALTERA NADA NA MAIN OU MASTER
+GIT COMMIT -M -- é abreviado (de uma unica linha)
+GIT COMMIT -- é mais aperfeiçoado 
+GIT STATUS -- PARA VERIFICAR O QUE ESTÁ SENDO MODIFICADO
+GIT BRANCH - PARA LISTAR AS BRANCH
+GIT CHECKOUT - PARA NAVEGAR ENTRE BRANCH
+GIT CHECKOUT -B - CRIAR UMA NOVA BRANCH
+GIT PULL pra refletir a atualização (commit no terminal)
+GIT ADD . (ADICIONA TODAS AS MUDANÇAS) GIT ADD (NOME DO ARQUIVO) ALTERA SOMENTE O ARQUIVO  
+
+# REGRA: SEMPRE QUE INICIAR O DIA, E ABRIR O PROJETO  DAR UM GIT PULL ANTES DE TRABALHAR EM UMA BRANCH OU FAZER QUALQUER COISA, NECESSÁRIO FAZER ESSE PROCESSO PARA QUE A PASTA DO PROJETO SEJA ATUALIZADA
+
